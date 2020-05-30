@@ -7,7 +7,13 @@ const CardInfo = (props) => {
         <img src={props.info.logo} alt="logo" />
       </div>
       <div className="position-wrapper">
-        <div className="company-name">{props.info.company}</div>
+        <div className="company-name">
+          {props.info.company}
+          {props.info.new ? <button className="new"> New! </button> : null}{" "}
+          {props.info.featured ? (
+            <button className="featured"> FEATURED </button>
+          ) : null}{" "}
+        </div>
         <div className="position">{props.info.position}</div>
         <div className="description-wrapper">
           <div className="postedAt">{props.info.postedAt}</div>
@@ -18,7 +24,7 @@ const CardInfo = (props) => {
       <div className="skills-wrapper">
         <div className="role">{props.info.role}</div>
         <div className="level">{props.info.level}</div>
-        <div className="language">
+        <div className="languages">
           {props.info.languages.map((language) => {
             return <div className="language">{language}</div>;
           })}

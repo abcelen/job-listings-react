@@ -1,16 +1,43 @@
-.App {
-  text-align: center;
-  background-color: rgb(218, 221, 231);
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: hsl(180, 29%, 50%);
+}
+
+.header-picture {
+  width: 100%;
+}
+
+.App {
+  text-align: center;
+  background-color: #e4f5f5;
+}
+
+.row {
+  /* display: flex;
+  align-items: center;
+  width: 100%;
+  align-content: center; */
+}
+.box {
+  /* display: flex;
+  flex-direction: column; */
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo-wrapper {
+  width: 25%;
 }
 .card {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  box-shadow: 3px 3px 5px #5ba4a4;
   align-items: center;
   background-color: white;
   margin: 10px;
@@ -20,38 +47,63 @@
   display: flex;
   flex-direction: column;
   width: 35%;
+  text-align: left;
 }
 .description-wrapper {
   display: flex;
   flex-direction: row;
-  align-content: space-between;
-  align-items: center;
 }
 .skills-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 35%;
 }
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
+.company-name {
+  color: #5ba4a4;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.position {
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+}
+.postedAt {
+  margin: 10px;
+}
+.contract {
+  margin-right: 10px;
+  padding: 10px;
+}
+.location {
+  margin-right: 10px;
+  padding: 10px;
+}
+.role,
+.level,
+.language {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: #5ba4a4;
+  background-color: #e4f5f5;
+  margin-right: 5px;
+  font-weight: 600;
+  padding: 3px;
+}
+.languages {
+  display: flex;
+  flex-direction: row;
+}
+
+.new {
   color: white;
+  background-color: #5ba4a4;
+  margin: 10px;
+  border-radius: 6px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.featured {
+  color: white;
+  background-color: black;
+  margin: 10px;
+  border-radius: 6px;
 }

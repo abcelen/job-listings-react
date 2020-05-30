@@ -6,9 +6,10 @@ const JobCard = () => {
   return (
     <div className="box">
       {data.map((info) => {
+        console.log(data);
         return (
           <div key={info.id}>
-            <CardInfo />
+            <CardInfo info={info} />
           </div>
         );
       })}

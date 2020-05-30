@@ -1,18 +1,37 @@
 .App {
   text-align: center;
+  background-color: rgb(218, 221, 231);
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
 }
-
+.position-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+.description-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: center;
+}
+.skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
